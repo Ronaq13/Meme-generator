@@ -1,0 +1,3 @@
+module GenerateMeme
+  VERSION = "0.1.0"
+end
