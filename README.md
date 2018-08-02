@@ -1,13 +1,38 @@
 # GenerateMeme
 This is a command line application to generate memes.
 
+## Setup
+
+This gem use a file named with `~/.generate_meme.env` for configuration. The file content should look like:
+
+```
+key=Place_you_key_here
+```
+
+Visit https://market.mashape.com/ and generate the key to place in above file
+
 ## Installation
 
     $ gem install generate_meme
 
-## Usage
+If you are using RVM then do install it in default ruby gem
 
-TODO: Write usage instructions here
+# Usage
+
+It has three commands
+
+- `with`            : This is used to generate meme
+- `list_all_fonts`  : This will print a list of all avaliable fonts
+- `list_all_images` : This will print a list of all avaliable images for meme 
+
+## Demo:
+
+- `with`
+
+```
+    generate_meme with TOP_TEXT BOTTOM_TEXT --meme="<any-specific-photo-name>"
+```
+If you don't provide --meme flag it will use the default image. Also it store the image in the same directory in which you executed the command
 
 ## Development
 
